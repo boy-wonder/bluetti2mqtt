@@ -24,7 +24,7 @@ options:
   mqtt_port: ""
   mode: mqtt
   ha_config: advanced
-  bt_mac: 04:7F:0E:A0:2A:DA
+  bt_mac: 04:7F:0E:A0:2A:DA CF:D6:58:95:C4:AF
   poll_sec: 5
   scan: false
   debug: false
