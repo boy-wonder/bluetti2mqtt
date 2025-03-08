@@ -6,8 +6,7 @@ COPY rootfs /
 
 # Install bluetti_mqtt
 RUN apk add --update --no-cache bluez git
-RUN pip install pyasn1 
-RUN pip install cryptography
+RUN pip install pyasn1==0.6.1 cryptography==44.0.0
 RUN pip install git+https://github.com/boy-wonder/bluetti_mqtt
 run apk del git \
 	&& rm -rf /var/cache/apk/* /lib/apk/db/*
