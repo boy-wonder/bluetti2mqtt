@@ -6,7 +6,7 @@ COPY rootfs /
 
 # Install bluetti_mqtt
 RUN apk add --update --no-cache bluez git
-RUN pip install git+https://github.com/boy-wonder/bluetti_mqtt --requirement requirements.txt
+RUN pip install git+https://github.com/boy-wonder/bluetti_mqtt
 run apk del git \
 	&& rm -rf /var/cache/apk/* /lib/apk/db/*
 
